@@ -13,10 +13,14 @@ public class Matematica {
         int b=scanner.nextInt();
         
         System.out.println("El resultado es "+ suma(a,b));
+        System.out.println("La multiplicacion es "+ multiplicacion(a,b));
     }
     
     public static int suma(int a, int b){
         return a+b;
     }
     
+    public static int multiplicacion(int a, int b) {
+        return a*b;
+    } 
 }
