@@ -20,11 +20,14 @@ public class Matematica {
             System.out.println("La division es "+ division(a,b));
 			System.out.println("La potenciacion es "+ potenciacion(a,b));
 			System.out.println("El modulo es "+ modulo(a,b));
+			System.out.println("La raiz es "+ radicacion(a,b));
+			
         }else{
             System.out.println("El resultado es "+ suma(a,b));
             System.out.println("La resta es "+ resta(a,b));
             System.out.println("La multiplicacion es "+ division(a,b));
 			System.out.println("La potenciacion es "+ potenciacion(a,b));
+			System.out.println("No se puede calcular la raiz");
         }
     }
     
@@ -35,6 +38,9 @@ public class Matematica {
     public static int multiplicacion(int a, int b) {
         return a*b;
     } 
+	public static float radicacion(int a, int b) {
+        return a^(1/b);
+    }
 
     public static int resta(int a, int b) {
         return a-b;
