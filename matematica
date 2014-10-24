@@ -18,10 +18,12 @@ public class Matematica {
             System.out.println("La resta es "+ resta(a,b));
             System.out.println("La multiplicacion es "+ multiplicacion(a,b));
             System.out.println("La division es "+ division(a,b));
+			System.out.println("La potenciacion es "+ potenciacion(a,b));
         }else{
             System.out.println("El resultado es "+ suma(a,b));
             System.out.println("La resta es "+ resta(a,b));
             System.out.println("La multiplicacion es "+ division(a,b));
+			System.out.println("La potenciacion es "+ potenciacion(a,b));
         }
     }
     
@@ -39,6 +41,10 @@ public class Matematica {
     
     public static float division(int a, int b){
         return a/b;
+    }
+	
+	public static float potenciacion(int a, int b){
+        return a^b;
     }
 
 }
