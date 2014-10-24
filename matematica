@@ -12,9 +12,17 @@ public class Matematica {
         int a=scanner.nextInt();
         int b=scanner.nextInt();
         
-        System.out.println("El resultado es "+ suma(a,b));
-        System.out.println("La multiplicacion es "+ multiplicacion(a,b));
-	   System.out.println("La resta es "+ resta(a,b));
+        
+        if(b!=0){
+            System.out.println("El resultado es "+ suma(a,b));
+            System.out.println("La resta es "+ resta(a,b));
+            System.out.println("La multiplicacion es "+ multiplicacion(a,b));
+            System.out.println("La division es "+ division(a,b));
+        }else{
+            System.out.println("El resultado es "+ suma(a,b));
+            System.out.println("La resta es "+ resta(a,b));
+            System.out.println("La multiplicacion es "+ division(a,b));
+        }
     }
     
     public static int suma(int a, int b){
@@ -27,6 +35,10 @@ public class Matematica {
 
     public static int resta(int a, int b) {
         return a-b;
-    } 
+    }
+    
+    public static float division(int a, int b){
+        return a/b;
+    }
 
 }
